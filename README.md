@@ -30,7 +30,7 @@ To set up the e-commerce website locally, follow these steps:
 
 ## Credits
 
-- The website design and development were done by [Said Lagauit].
+- The website design and development were done by Said Lagauit.
 - Special thanks to the open-source community for providing the libraries and tools used in this project.
 
 ## Contact
