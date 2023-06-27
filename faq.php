@@ -5,8 +5,10 @@ include './init.php';
 ?>
 <div class="faq">
   <div class="container">
-    <h1>Frequently Asked Questions</h1>
-    <?php displayFAQ($faqItems); ?> <!-- Call the function to display FAQ items -->
+    <div class="col-md-6 mx-auto">
+      <h1>Frequently Asked Questions</h1>
+      <?php displayFAQ($faqItems); ?>
+    </div>
   </div>
 </div>
 <?php
