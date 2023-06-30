@@ -19,7 +19,9 @@ p {
   margin: 0;
 }
 
-
+h2.card-title {
+  font-size: 1.2rem;
+}
 
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */

@@ -305,7 +305,7 @@ if ($do == 'cart') {
       'product_price' => $product_price
     );
     $_SESSION['cart'][] = $cart_item;
-    show_message($product_name . '&nbsp;added to cart successfully.', 'success');
+    show_message('Add ' . $product_name . ' to cart successfully.', 'success');
     header('location: ' . $_SERVER['HTTP_REFERER']);
     exit();
   } else {
@@ -325,7 +325,7 @@ if ($do == 'cart') {
         break;
       }
     }
-    show_message($products . '&nbsp;removed from cart successfully.', 'success');
+    show_message('Remove ' . $products . ' from cart successfully.', 'success');
     header('location: ' . $_SERVER['HTTP_REFERER']);
     exit();
   } else {

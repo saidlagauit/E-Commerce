@@ -5,8 +5,8 @@ include './init.php';
 ?>
 <div class="faq">
   <div class="container">
-    <div class="col-md-6 mx-auto">
-      <h1>Frequently Asked Questions</h1>
+    <h1>Frequently Asked Questions</h1>
+    <div class="col-md-10 mx-auto">
       <?php displayFAQ($faqItems); ?>
     </div>
   </div>

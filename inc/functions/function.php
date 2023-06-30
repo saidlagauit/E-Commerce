@@ -47,22 +47,22 @@ function pageActive($currentPage, $pageName)
 
 function displayFAQ($faqItems)
 {
-  echo '<div class="accordion" id="faqAccordion">';
-
-  foreach ($faqItems as $index => $item) {
-    echo '<div class="accordion-item">';
-    echo '<h3 class="accordion-header" id="faqHeading' . $index . '">';
-    echo '<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse' . $index . '" aria-expanded="false" aria-controls="faqCollapse' . $index . '">';
-    echo $item['question'];
-    echo '</button>';
-    echo '</h3>';
-    echo '<div id="faqCollapse' . $index . '" class="accordion-collapse collapse" aria-labelledby="faqHeading' . $index . '" data-bs-parent="#faqAccordion">';
-    echo '<div class="accordion-body">';
-    echo '<p>' . $item['answer'] . '</p>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
-  }
-
-  echo '</div>';
+?>
+  <div class="accordion" id="faqAccordion">
+    <?php foreach ($faqItems as $index => $item) : ?>
+      <div class="accordion-item">
+        <h2 class="accordion-header" id="faqHeading<?php echo $index ?>">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqCollapse<?php echo $index ?>" aria-expanded="false" aria-controls="faqCollapse<?php echo $index ?>">
+            <?php echo $item['question'] ?>
+          </button>
+        </h2>
+        <div id="faqCollapse<?php echo $index ?>" class="accordion-collapse collapse" aria-labelledby="faqHeading<?php echo $index ?>" data-bs-parent="#faqAccordion">
+          <div class="accordion-body">
+            <p><?php echo $item['answer'] ?></p>
+          </div>
+        </div>
+      </div>
+    <?php endforeach ?>
+  </div>
+<?php
 }
