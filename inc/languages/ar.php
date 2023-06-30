@@ -11,5 +11,6 @@ $lang = [
   'Tracking' => 'تتبع',
   'Contact Us' => 'اتصل بنا',
   'Search' => 'بحث',
-  '' => ''
+  'Said Lagauit Store' => 'متجر سعيد لكويط',
+  'Last Products' => 'آخر المنتجات'
 ];

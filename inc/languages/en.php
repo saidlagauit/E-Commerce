@@ -11,5 +11,7 @@ $lang = [
   'Tracking' => 'Tracking',
   'Contact Us' => 'Contact Us',
   'Search' => 'Search',
+  'Said Lagauit Store' => 'Said Lagauit Store',
+  'Last Products' => 'Last Products',
   '' => ''
 ];

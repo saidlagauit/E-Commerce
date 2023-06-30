@@ -8,7 +8,7 @@ $ListProducts = $stmt->fetchAll();
 ?>
 <div class="product-list my-3">
   <div class="container">
-    <h1>Last Products</h1>
+    <h1><?php echo $lang['Last Products'] ?></h1>
     <div class="row g-3">
       <?php foreach ($ListProducts as $product) : ?>
         <div class="col-md-3">
