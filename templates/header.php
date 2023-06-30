@@ -1,3 +1,24 @@
+<?php
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['language'])) {
+  $selectedLanguage = $_POST['language'];
+  $_SESSION['language'] = $selectedLanguage;
+  header('Location: ' . $_SERVER['HTTP_REFERER']);
+  exit;
+}
+if (isset($_SESSION['language'])) {
+  $selectedLanguage = $_SESSION['language'];
+} else {
+  $browserLanguage = substr($_SERVER['HTTP_ACCEPT_LANGUAGE'], 0, 2);
+  $supportedLanguages = ['en', 'ar'];
+  $selectedLanguage = in_array($browserLanguage, $supportedLanguages) ? $browserLanguage : 'en';
+  $_SESSION['language'] = $selectedLanguage;
+}
+if ($selectedLanguage === 'ar') {
+  include $lang . "ar.php";
+} else {
+  include $lang . "en.php";
+}
+?>
 <!doctype html>
 <html dir="<?php echo $lang['Ltr']; ?>" lang="<?php echo $lang['En']; ?>" data-bs-theme="light">
 

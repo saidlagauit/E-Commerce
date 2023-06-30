@@ -1,7 +1,7 @@
 <?php
-$lang = array(
+$lang = [
   'Said Lagauit' => 'Said Lagauit',
-  'Ltr' => 'ltr',
+  'Ltr' => 'Ltr',
   'En' => 'en',
   'Bootstrap' => 'bootstrap.min.css',
   'English' => 'English',
@@ -10,5 +10,6 @@ $lang = array(
   'FAQ' => 'FAQ',
   'Tracking' => 'Tracking',
   'Contact Us' => 'Contact Us',
+  'Search' => 'Search',
   '' => ''
-);
+];

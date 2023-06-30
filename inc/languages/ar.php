@@ -1,16 +1,15 @@
 <?php
-$lang = array(
+$lang = [
   'Said Lagauit' => 'سعيد لكويط',
   'Ltr' => 'rtl',
-  'En' => 'ar',
+  'En' => 'en',
   'Bootstrap' => 'bootstrap.rtl.min.css',
   'English' => 'انجليزي',
   'Arabic' => 'عربي',
-  'English' => 'انجليزي',
-  'Arabic' => 'عربي',
   'Shop' => 'متجر',
-  'FAQ' => 'الأسئلة الشائعة',
+  'FAQ' => 'أسئلة شائعة',
   'Tracking' => 'تتبع',
   'Contact Us' => 'اتصل بنا',
+  'Search' => 'بحث',
   '' => ''
-);
+];
