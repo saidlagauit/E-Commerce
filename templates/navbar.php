@@ -10,7 +10,7 @@ $cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
     <div class="collapse navbar-collapse" id="MyNavbar">
       <form class="d-flex btn-search" role="search" action="search.php" method="GET">
         <div class="input-group">
-          <input class="form-control" type="search" name="q" placeholder="Search" aria-label="Search" required="required" />
+          <input class="form-control" type="search" name="q" placeholder="<?php echo $lang['Search'] ?>" aria-label="Search" required="required" />
           <button class="btn btn-outline-dark" type="submit" disabled><?php echo $lang['Search'] ?></button>
         </div>
       </form>
