@@ -32,9 +32,9 @@ $cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" aria-label="Language" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             <?php if ($selectedLanguage === 'en') {
-              echo $lang['English'];
+              echo '<span class="fi fi-gb"></span>';
             } else {
-              echo $lang['Arabic'];
+              echo '<span class="fi fi-ma"></span>';
             }
             ?>
           </a>
@@ -43,7 +43,7 @@ $cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
               <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <input type="hidden" name="language" value="en">
                 <button class="dropdown-item" type="submit">
-                  <?php echo $lang['English'] ?>
+                  <span class="fi fi-gb"></span>&nbsp;<?php echo $lang['English'] ?>
                 </button>
               </form>
             </li>
@@ -51,7 +51,7 @@ $cartCount = isset($_SESSION['cart']) ? count($_SESSION['cart']) : 0;
               <form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
                 <input type="hidden" name="language" value="ar">
                 <button class="dropdown-item" type="submit">
-                  <?php echo $lang['Arabic'] ?>
+                  <span class="fi fi-ma"></span>&nbsp;<?php echo $lang['Arabic'] ?>
                 </button>
               </form>
             </li>

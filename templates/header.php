@@ -31,6 +31,7 @@ if ($selectedLanguage === 'ar') {
   <link rel="shortcut icon" href="<?php echo $img ?>favicon_io/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="<?php echo $css; ?><?php echo $lang['Bootstrap']; ?>" />
   <link rel="stylesheet" href="<?php echo $css ?>all.min.css" />
+  <link rel="stylesheet" href="<?php echo $css ?>flag-icons.min.css" />
   <link rel="stylesheet" href="<?php echo $css ?>main.css" />
 
 </head>
