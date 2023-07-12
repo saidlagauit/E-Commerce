@@ -27,6 +27,17 @@ To set up the e-commerce website locally, follow these steps:
 4. Place the project files in the web server's document root directory.
 5. Configure the database connection by updating the database credentials in the PHP files.
 6. Open your browser and visit the website's URL to view and interact with the e-commerce site.
+7. Create new table contact used :
+```sql
+CREATE TABLE `contacts` (
+  `id` int(11) NOT NULL,
+  `name` text NOT NULL,
+  `email` varchar(255) NOT NULL,
+  `subject` text NOT NULL DEFAULT 'none',
+  `message` text NOT NULL,
+  `created_c` timestamp NOT NULL DEFAULT current_timestamp()
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+```
 
 ## Credits
 
