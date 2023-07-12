@@ -39,11 +39,6 @@ CREATE TABLE `contacts` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 ```
 
-## Credits
-
-- The website design and development were done by Said Lagauit.
-- Special thanks to the open-source community for providing the libraries and tools used in this project.
-
 ## Contact
 
 If you have any questions or feedback, feel free to contact us at lagauitsaid@hotmail.com.
