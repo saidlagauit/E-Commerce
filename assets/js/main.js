@@ -1,7 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-  
-
-  
   const forms = document.querySelectorAll("form");
   forms.forEach((form) => {
     const submitButton = form.querySelector('button[type="submit"]');
